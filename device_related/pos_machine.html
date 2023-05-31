@@ -1,0 +1,57 @@
+<!--
+title: POS机
+description: 
+published: true
+date: 2023-05-30T13:11:00.345Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-05-30T13:10:57.616Z
+-->
+
+<h1>介绍</h1>
+<p>POS机用于让客户使用银行卡支付，我们的系统可以连接部分品牌型号的POS，从而直接传输支付金额至POS机而不是需要人工手动输入。</p>
+<p style="text-align:right;">Edit</p>
+<h1>Points Me 软件内设置</h1>
+<p>使用联动功能的话需要在后台开启POS机设置，并在软件内的 系统设置-付款方式 对以下几项进行设置:</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>支持POS机</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>POS机Id</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>POS机名称</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>POS机收银员</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Ip端口</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<figure class="image"><img src="/pos_setting.png"></figure>
+<h1>适用机型</h1>
+<p style="text-align:right;">Edit</p>
+<h2>Pax D210 安装教程</h2>
+<p><a href="https://youtu.be/080Qdar2lWY">视频教程</a></p>
+<p style="text-align:right;">Edit</p>
+<h2>Ingenico MOVE 3500 安装教程</h2>
+<ol>
+  <li>进入F1，选择Installazione</li>
+  <li>输入相应的密码</li>
+  <li>进入Config</li>
+  <li>进入Dati linea ECR</li>
+  <li>更改以下设置 <code>Protocollo 17; Tipo collegamento Eth; Porta 8000; Conferma ecr NO</code>, 其余设置保持默认;</li>
+  <li>回到上层选项，进入<code>Configurzione Ethernet</code>，按照当前网络设置配置。</li>
+</ol>
+<p><a href="https://youtu.be/QHomcJFYitg">视频教程</a></p>

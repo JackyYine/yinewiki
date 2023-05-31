@@ -1,0 +1,26 @@
+<!--
+title: 发射器
+description: 此页面包含发射器的介绍与安装流程
+published: true
+date: 2023-05-29T09:51:09.877Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-05-29T09:11:58.332Z
+-->
+
+<h1>发射器</h1>
+<p>发射器也被称为Access Point或AP，主要用于给餐厅内提供高质量WIFI信号。 通常商用在无遮挡的情况下可以拥有半径10-15米的满格信号范围（15米外信号会衰减，但还是能用，不建议超过20米），通常一个餐厅会需要多个发射器组成一个MESH，也就是一个大型的WIFI网络，从而让整个餐厅消除信号死角。<br>我们公司提供以下几种发射器:</p>
+<ul>
+  <li>TP-Link EAP225</li>
+  <li>TP-Link EAP245</li>
+  <li>TP-Link EAP610</li>
+</ul>
+<p>发射器包装内部含发射器本体，电源，背板。<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=400&amp;tok=034768&amp;media=ap_component.png" alt=""></figure>
+<p>安装时需要按照以下方式连接各个部件:<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=800&amp;tok=b513e1&amp;media=ap_connection.png" alt=""></figure>
+<p><br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=400&amp;tok=72e4ca&amp;media=eap245-v3_back.jpg" alt=""></figure>
+<p><br>插好后进入Omada软件内会发现发射器会以<strong>PENDING</strong>状态，也就是待配对。 （倘若PENDING旁出现一个WiFi的图标则说明此AP是以无线模式搜寻到的，需要检查网线，这种状态下也可以配对，但是会影响到性能）<br>&nbsp;</p>
+<p>点击右侧的<strong>ADOPT</strong>即可将其纳入管辖。之后Omada会对其自动配置，在完成后需要进入发射器的设置页面<br><strong>发射器图标 → Config → IP Settings</strong><br>按照以下参数进行设置（第二台IP为10.10.10.22，第三台为10.10.10.23，以此类推）<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=400&amp;tok=a685ec&amp;media=ap_parameter.png" alt=""></figure>

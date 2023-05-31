@@ -1,0 +1,136 @@
+<!--
+title: 常见问题
+description: 
+published: true
+date: 2023-05-29T09:50:28.072Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-05-09T16:09:21.634Z
+-->
+
+<h1>常见问题</h1>
+<h2>店内断网，没有WiFi怎么办</h2>
+<p>&nbsp;</p>
+<h2>如何连接热敏打印机</h2>
+<h2>打印机刀口卡住导致纸盖打不开</h2>
+<p>打印机运作时有小概率出现刀口卡住纸盒导致无法出纸，这种情况下需要按照以下方式操作：</p>
+<ol>
+  <li>关闭打印机电源</li>
+  <li>打开打印机带有锯齿的前盖</li>
+  <li>用手或者任意工具拨动齿轮直到刀片完全收缩回打印机内<strong>(根据打印机型号拨动方向会有所不同，GP-C80250i plus是朝向出纸口方向拨动)</strong></li>
+  <li>将前盖装回打印机</li>
+  <li>开机测试是否恢复正常</li>
+</ol>
+<p>视频教程：<a href="https://youtu.be/34pHjYpHHN8">https://youtu.be/34pHjYpHHN8</a></p>
+<h2>Hannspree屏幕黑屏</h2>
+<p>首先确保视频线连接正确</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=600&amp;tok=34302c&amp;media=hannspree_back.jpg" alt=""></figure>
+<p>之后手动将视频源调整到HDMI</p>
+<p>视频教程：<a href="https://youtu.be/qvLjCjpch9M">https://youtu.be/qvLjCjpch9M</a></p>
+<p>如果以上操作都不能解决则需要联系客服。</p>
+<h2>扫码点餐扫不出来或失效</h2>
+<p>检查以下几点:&nbsp;</p>
+<ol>
+  <li>检查餐厅外网是否有网络</li>
+  <li>检查外网IP是否改变，使用ddns的情况下检查IP更新是否正常。</li>
+  <li>检查内网与外网路由器的<strong>端口映射</strong>设置</li>
+  <li>检查软件内 <strong>设置–商家信息–局域网IP</strong> 是否符合当前外网IP</li>
+</ol>
+<h2>热敏打印机不出纸</h2>
+<p>检查以下几点:</p>
+<ol>
+  <li>打印机是否开机，是否有纸</li>
+  <li>检查打印机背后网线是否亮起，试图ping打印机IP，查看是否有回应</li>
+  <li>检查软件内打印机是否设置正确</li>
+  <li>检查Windows打印机设置是否正确</li>
+</ol>
+<p>通常大多数情况都为网线连接不良导致无法与主机通信从而不出纸。 个别情况为设备硬件损坏，这种情况需要联系客服保修。</p>
+<h2>如何设置扫码点餐</h2>
+<p>设置扫码点餐分为以下步骤:</p>
+<p>&nbsp;</p>
+<ol>
+  <li>确保公网IP为<strong>固定IP</strong>或者已设置 <strong>DDNS</strong></li>
+  <li>在路由器内设置端口映射 教程</li>
+  <li>将桌面端软件内的 <strong>设置–商家信息–局域网IP</strong> 设置为当前的公网IP或DDNS地址</li>
+  <li>进入桌面端软件内的 <strong>设置–桌台管理–桌台管理</strong>，点击右上角的<strong>批量打印二维码</strong>即可获得包含所有桌台二维码图片的压缩包</li>
+  <li>选择任意二维码进行扫码测试是否正常。</li>
+</ol>
+<h2>如何制作克隆硬盘</h2>
+<p>通过克隆（Clone）的方式可以快速复制一个硬盘内的所有文件至另一块硬盘，从而达到量产初始化完成的硬盘或备份已有硬盘的目的。</p>
+<h3>制作方式</h3>
+<ol>
+  <li>在Macrium官网下载备份软件 Macrium Reflect free 并安装在电脑上。</li>
+  <li>在电脑上插上旧盘与新盘 （如果是想将当前电脑的数据备份的话只需插入新盘即可）。</li>
+  <li>打开Macrium Reflect点击旧盘后点击克隆此硬盘 <i><mark class="marker-blue">图一</mark></i></li>
+  <li>选择目标盘，之后一直点击下一步直到克隆进程开始。</li>
+  <li>等待克隆结束点击完成即可。</li>
+</ol>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?cache=&amp;media=macrium.png">
+  <figcaption>图一</figcaption>
+</figure>
+<h2>如何更换SSD</h2>
+<h2>平板登录不了如何解决</h2>
+<p>优先检查以下几点</p>
+<ul>
+  <li>检查账号与密码是否正确</li>
+  <li>检查WiFi是否连接至名称为<code>PointsMe</code>的WiFi。（某些商家可能没有使用我们的WiFi设置，这种情况下需要连接进与主机<strong>同一网段</strong>的WiFi。）</li>
+  <li>检查主机防火墙设置，查看是否允许<code>16961</code>端口进站与出站的通信</li>
+  <li>检查平板APP版本是否与主机符合</li>
+  <li>重新创建一个新账号，查看是否能登录</li>
+</ul>
+<p>在以上几点都检查过并且确认正常后还是无法登录的情况下联系客服。</p>
+<h2>打印机如何打印测试纸</h2>
+<h2>如何查看设备当前IP地址</h2>
+<h5>外网IP地址</h5>
+<p>打开浏览器，谷歌搜索 <code>my ip</code>，点击第一个结果即可查看当前外网IP地址。 或者点击 <a href="https://whatismyipaddress.com/it/il-mio-ip">此链接</a> 查看。</p>
+<h5>内网IP地址</h5>
+<p>开始栏搜索 <code>CMD</code>，打开后搜索ipconfig即可查看。<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=600&amp;tok=7fa108&amp;media=ipconfig.png" alt=""></figure>
+<h2>Windows打印服务异常</h2>
+<h5>症状</h5>
+<ul>
+  <li>打印延迟极其高</li>
+  <li>打印服务占用大量内存（RAM）</li>
+  <li>打印服务占用大量磁盘读写百分比</li>
+</ul>
+<h5>解决方法</h5>
+<ol>
+  <li>关闭<strong>打印服务（Print spooler）</strong>，可通过服务管理器或者直接在拥有管理员权限的CMD内输入此指令 <code>net stop spooler</code></li>
+  <li>在开始的搜索栏输入 <code>%WINDIR%\system32\spool\printers</code>，<strong>删除打开的文件夹内的所有文件</strong></li>
+  <li>重启电脑，并确认重启后打印服务恢复正常</li>
+  <li>若打印服务还是处于关闭状态则需要手动打开打印服务，可通过服务管理器或者直接在拥有管理员权限的CMD内输入此指令 <code>net start spooler</code></li>
+</ol>
+<h2>打印机出现乱码</h2>
+<h3>可能原因</h3>
+<p>驱动错误</p>
+<p>字符库错误</p>
+<p>打印机设置了屏蔽中文（<strong>在西方国家会默认开启</strong>，因为某些税票不允许出现中文）</p>
+<h3>解决方式</h3>
+<h5>驱动错误</h5>
+<p>使用正确驱动重新安装打印机</p>
+<h5>字符库错误</h5>
+<p>在G80 Utility软件内将以下设置改成如图：<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=600&amp;tok=adee5f&amp;media=%E6%89%93%E5%8D%B0%E6%9C%BAg80.png" alt=""></figure>
+<h3>打印机设置了屏蔽中文</h3>
+<p>在G80 Utility软件内将以下设置改成如图：<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=600&amp;tok=adee5f&amp;media=%E6%89%93%E5%8D%B0%E6%9C%BAg80.png" alt=""></figure>
+<h2>单子过长导致提前被切</h2>
+<p>进入打印机属性，将以下设置改成与图相同后点击确认保存即可。<br>&nbsp;</p>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?media=pasted:20230424-145053.png" alt=""></figure>
+<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?media=pasted:20230424-145059.png" alt=""></figure>
+<h2>单个桌台账号登录多个平板导致重复出菜</h2>
+<p>正确操作为将多张桌合并为同一张，并且给每台平板登录不同的账号。 例: 15号桌是永久大桌，那最好准备15a与15b两个桌台作为需要多个平板时合并用的桌台，然后三个平板分别登录15，15a 与 15b 三个不同的账号。&nbsp;</p>
+<ul>
+  <li>例: 4，5，6三张桌合并为临时大桌，那三个平板可以分别登录4,5,6三个账户。</li>
+  <li>&nbsp;错误例子: 15号桌为大桌，此时需要三个平板，在三台平板上皆登录15号桌的账号。</li>
+</ul>
+<h2>平板图片刷新缓慢</h2>
+<p>图片的加载速度跟网速和图片大小有关，倘若客户使用的是平板，则只需要检查图片大小是否过大，压缩图片即可解决。</p>
+<p>若是手机扫码出现加载过慢，除了图片大小以外还需使用 <a href="https://www.speedtest.net/it">Speedtest</a> 检查客户上载速度，如果在20Mbit/s以下则建议客户升级网络套餐，提高上载速度（Upload）。</p>
+<h2>二维码被盗</h2>
+<p>此时商家拥有两种方案:</p>
+<p>开通定位服务，此服务由谷歌提高，需要支付额外费用，可以禁止距离餐厅过远的客户下单。</p>
+<p>在设置- 开启 只允许跑堂</p>
+<p>&nbsp;</p>
+<h2>Points Me server多次崩溃</h2>
+<h2>取菜口点击重做导致生产中心出单</h2>

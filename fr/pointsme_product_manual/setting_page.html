@@ -1,0 +1,318 @@
+<!--
+title: Page des paramètres
+description: 
+published: true
+date: 2023-05-31T14:42:49.518Z
+tags: 
+editor: ckeditor
+dateCreated: 2023-05-31T14:42:45.359Z
+-->
+
+<h1>Définir l'interface</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Informations d'affaires</h2>
+<p>Ici, vous pouvez afficher les informations sur votre propre magasin, les informations sur l'entreprise, les coordonnées de l'adresse&nbsp;; afficher/télécharger le LOGO du magasin, modifier l'IP du réseau local et public (pour les codes QR avec tableaux) et définir le mot de passe du nom WIFI (pour l'application client)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Centre de compte</h2>
+<h3>Gestion de compte</h3>
+<p>Ici, vous pouvez créer des comptes pour chaque extrémité à utiliser et gérer les comptes (réinitialiser les mots de passe, supprimer, désactiver, modifier les autorisations, etc.)</p>
+<p>Étapes pour ajouter un compte&nbsp;:</p>
+<p>1. Cliquez sur Ajouter un compte</p>
+<p>2. Entrez le compte (nom d'utilisateur de connexion), le mot de passe (mot de passe de connexion), le nom de l'employé, le numéro de travail et sélectionnez le type de compte et le rôle</p>
+<p>3. Réglez le statut sur "Activé" et confirmez</p>
+<p>Si vous souhaitez désactiver temporairement un compte, vous pouvez changer le statut en "Désactivé", et si vous souhaitez supprimer définitivement un compte, utilisez la fonction de suppression.</p>
+<p>&nbsp;</p>
+<h4>Type de compte</h4>
+<p>Administrateur&nbsp;: uniquement applicable au bureau&nbsp;; pour les patrons, les actionnaires, les gérants de magasin, etc.</p>
+<p>Caissier&nbsp;: applicable uniquement sur ordinateur&nbsp;; utilisé par les gérants de magasin, les caissiers, etc.</p>
+<p>Salle de course : Applicable au terminal mobile de la salle de course (Android, iOS), au terminal de la tablette (Android, iOS) et au bureau&nbsp;; pour la salle de course ou tout initié qui souhaite commander avec un téléphone mobile (patron, gérant de magasin, etc.), le terminal de bureau est destiné à l'ordinateur du restaurant pour ajouter des commandes</p>
+<p>Client&nbsp;: applicable au terminal de tablette (Android, iOS&nbsp;); les modes suivants peuvent être définis&nbsp;:</p>
+<p>&nbsp;</p>
+<p>Table non liée (compte client général)&nbsp;: vous pouvez ouvrir n'importe quelle table (la table qui a déjà été ouverte doit entrer le mot de passe de la table)</p>
+<p>&nbsp;</p>
+<p>Table de liaison (compte client individuel)&nbsp;: après vous être connecté, vous ne pouvez voir que la table liée et la saisir, pas besoin de saisir le mot de passe de la table</p>
+<p>&nbsp;</p>
+<p>Clients à emporter&nbsp;: une fois connectés, ils ne peuvent voir que le menu du colis et passer une commande de colis (les clients peuvent entrer leur numéro de téléphone portable, leur nom et d'autres informations)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Arrière-cuisine&nbsp;: Applicable au terminal de tablette (Android uniquement) et au terminal de cuisine Windows&nbsp;; besoin de lier le centre de production correspondant</p>
+<p>Port de ramassage des aliments&nbsp;: applicable au terminal de tablette (Android uniquement) et au terminal de cuisine Windows&nbsp;; besoin de lier le port de ramassage des aliments correspondant</p>
+<p>Utilisateurs publicitaires&nbsp;: applicable aux appareils Android (tablettes, grands écrans de boîtiers Android, etc.)&nbsp;; après la connexion, les publicités définies en arrière-plan peuvent être lues</p>
+<p>Écran caissier secondaire&nbsp;: adapté aux tablettes (Android uniquement)&nbsp;; il sert à afficher le code QR de la loterie lors du paiement des clients&nbsp;; il doit lier le compte habituellement utilisé pour le caissier</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Gestion des rôles</h3>
+<p>Ici, vous pouvez ajouter des rôles pour attribuer différentes pages, et les autorisations des boutons sont données à chaque compte</p>
+<p>Le système est livré avec 4 rôles par défaut&nbsp;:</p>
+<p>&nbsp;</p>
+<p>Titulaire&nbsp;: possède toutes les autorisations</p>
+<p>&nbsp;</p>
+<p>Gérant de magasin&nbsp;: Identique au titulaire</p>
+<p>&nbsp;</p>
+<p>Caissier&nbsp;: aucune autorisation pour définir et afficher la liste des commandes</p>
+<p>&nbsp;</p>
+<p>Salle d'attente&nbsp;: pas d'autorisation d'installation, de consultation des commandes et de diverses opérations de paiement</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Gestion des menus</h2>
+<h3>Gestion des plats</h3>
+<p>Ici vous pouvez voir, modifier, supprimer, toutes les informations sur les plats. Chaque page peut afficher 15 plats. Vous pouvez trouver un certain plat directement par le nom ou le code du plat via le champ de recherche ci-dessus.</p>
+<p><a href="http://10.10.1.3:16999/doku.php?id=%E8%8F%9C%E5%93%81%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E">Description du champ Plats</a></p>
+<p>&nbsp;</p>
+<h4>Description des boutons de fonctionnement</h4>
+<h5>nom du plat en majuscule</h5>
+<p>Après avoir cliqué et confirmé, les noms de tous les plats en arrière-plan seront changés en majuscules.</p>
+<p>&nbsp;</p>
+<h5>Nom du plat en minuscules</h5>
+<p>Après avoir cliqué et confirmé, les noms de tous les plats en arrière-plan seront changés en minuscules.</p>
+<p>&nbsp;</p>
+<h5>Déménagement en masse</h5>
+<p>L'ordre des plats peut être déplacé</p>
+<p>Mode d'emploi&nbsp;: cochez d'abord les plats que vous souhaitez déplacer (simples ou multiples), puis cliquez sur le bouton "Déplacer par lots"&nbsp;; sélectionnez la position que vous souhaitez déplacer dans la fenêtre contextuelle (la position est au-dessus des plats sélectionnés dans le pop-up ) et validez.</p>
+<p>&nbsp;</p>
+<h5>Ajouter des plats</h5>
+<p>Cliquez pour ajouter un nouveau plat à l'arrière-plan.</p>
+<p>&nbsp;</p>
+<h5>Haut</h5>
+<p>Après avoir cliqué, les plats correspondants seront triés vers le haut</p>
+<p>&nbsp;</p>
+<h5>Installation</h5>
+<p>Après avoir cliqué, la page de détails du plat correspondant s'ouvrira et les informations sur le plat pourront être modifiées</p>
+<p>&nbsp;</p>
+<h5>Supprimer</h5>
+<p>Après avoir cliqué et confirmé, le plat correspondant sera supprimé du fond</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Type de plat</h3>
+<p>Ici, vous pouvez afficher, modifier, supprimer et les informations sur le type de plat.</p>
+<p>Vous pouvez définir le nombre de plats avec un prix de 0 par personne pouvant être commandés pour le type correspondant via "Nombre limite de portions".</p>
+<h4>Description des boutons de fonctionnement</h4>
+<h4>Déménagement en masse</h4>
+<p>L'ordre des types de plats peut être ajusté par lots.</p>
+<p>Comment ça fonctionne: Cochez d'abord le type de plats que vous souhaitez déplacer (simple ou multiple), cliquez sur le bouton "Déplacer par lots", puis sélectionnez le type vers lequel vous souhaitez déplacer ces types et confirmez.</p>
+<p>&nbsp;</p>
+<h4>Ajouter un type de plat</h4>
+<p>Un nouveau type de plat peut être ajouté.</p>
+<p>&nbsp;</p>
+<h4>Haut</h4>
+<p>Après avoir cliqué, le type de plat correspondant sera trié vers le haut.</p>
+<p>&nbsp;</p>
+<h4>Installation</h4>
+<p>Après avoir cliqué, la page de détails du type de plat correspondant s'ouvrira et les informations sur le type pourront être modifiées</p>
+<p>&nbsp;</p>
+<h4>Supprimer</h4>
+<p>Après avoir cliqué et confirmé, le type de plat correspondant sera supprimé</p>
+<p>Remarque&nbsp;: Vous devez déplacer tous les plats de ce type vers d'autres types avant de pouvoir les supprimer.</p>
+<p>&nbsp;</p>
+<h4>Description du champ type de plat</h4>
+<h5>Tapez le nom</h5>
+<p>Le nom par défaut du type de plat, vous pouvez entrer le nom correspondant à la langue de chaque pays grâce à l'icône de traduction à gauche (comme le nom du plat)</p>
+<p>&nbsp;</p>
+<h5>Le compte client ne prend pas en charge le type de client</h5>
+<p>Grâce à ce réglage, le type de plat correspondant peut être bloqué d'une extrémité (ou de plusieurs extrémités) du client.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>liste des menus</h3>
+<p>Ici, vous pouvez visualiser, modifier, supprimer les informations du menu, les plats du menu, etc.</p>
+<p>&nbsp;</p>
+<h5>Menu Ajouter/Modifier la description du champ</h5>
+<p>Cliquez sur Ajouter un menu pour ajouter un nouveau menu, et cliquez sur Modifier pour modifier les informations du menu correspondant.</p>
+<p>&nbsp;</p>
+<h5>Nom du menu</h5>
+<p>Le nom par défaut du menu&nbsp;; vous pouvez ajouter la traduction correspondant à chaque langue grâce au signe plus à droite</p>
+<p>&nbsp;</p>
+<h5>Que ce soit à temps plein</h5>
+<p>Lorsqu'il est réglé sur "Oui", le client affichera ce menu à tout moment (permet aux clients de choisir quand le réglage du menu est activé, sinon seul le menu avec la priorité la plus élevée sera affiché)</p>
+<p>Lorsqu'il est réglé sur "Non", le réglage de l'heure du repas apparaîtra ci-dessous, et il ne sera affiché sur le client que pendant la période de temps définie. Différents prix et frais de siège peuvent être fixés pour différentes périodes.</p>
+<p>&nbsp;</p>
+<h5>Que ce soit pour activer</h5>
+<p>S'il n'est pas activé, ce menu sera bloqué de toutes parts jusqu'à ce qu'il soit modifié pour être activé.</p>
+<p>&nbsp;</p>
+<h5>Types de menus</h5>
+<p>Commande : Ajoutez des plats à ce type de menu, le prix par défaut est le prix du plat en arrière-plan ; vous pouvez définir le prix de la place.</p>
+<p>&nbsp;</p>
+<p>Forfait repas&nbsp;: Ajoutez des plats à ce type de menu, le prix par défaut est 0&nbsp;; vous pouvez définir le prix du siège, le prix du repas pour les adultes, le prix du repas pour les enfants, le nombre maximum de plats par personne et le temps d'intervalle lors de la commande.</p>
+<p>&nbsp;</p>
+<p>Forfait&nbsp;: ajoutez des plats à ce type de menu, le prix par défaut est le prix des plats en arrière-plan&nbsp;; vous pouvez définir si vous souhaitez l'activer sur la plateforme.</p>
+<p>&nbsp;</p>
+<h5>Intervalle de commande/Nombre maximum de plats</h5>
+<p>Ce paramètre n'est disponible que pour les menus des forfaits repas</p>
+<p>Nombre maximum de plats : Contrôlez le nombre maximum de plats (plats avec un prix de 0) que les utilisateurs (par personne) peuvent commander en une seule commande pour éviter les commandes malveillantes. Ne pas remplir ou 0 signifie illimité.</p>
+<p>Intervalle de commande : contrôlez le temps entre deux commandes passées par l'utilisateur pour éviter les commandes fréquentes. Ne pas remplir ou remplir 0 signifie aucune limite.</p>
+<p>Les deux options doivent être configurées pour être utilisées. Si le nombre maximum de plats est fixé à 7 et que le temps d'intervalle est de 10 minutes, une table pour 2 personnes peut commander 14 plats avec un prix de 0, puis 14 plats peuvent être commandés à nouveau après 10 minutes.</p>
+<p>&nbsp;</p>
+<h5>Tarif adulte/tarif enfant/tarif siège</h5>
+<p>Après réglage, après saisie du nombre de personnes lors de l'ouverture d'une table, le tarif repas adulte/repas enfant/siège sera automatiquement calculé.</p>
+<p>Remarque&nbsp;: Si un fuseau horaire est défini, le calcul des frais dans le fuseau horaire sera utilisé pour ouvrir la table dans le fuseau horaire&nbsp;; le frais par défaut sera utilisé pour calculer l'ouverture de la table en dehors du fuseau horaire (serveur ou caisse enregistreuse).</p>
+<p>&nbsp;</p>
+<h5>Si la plateforme est activée</h5>
+<p>Seuls les plats de menu de type forfait auront des paramètres secondaires</p>
+<p>Lorsqu'il est défini sur "Oui", ce menu peut être utilisé sur la plateforme de vente à emporter (page Web, application, lecture de code QR à emporter).</p>
+<p>&nbsp;</p>
+<h5>Ajouter une description du champ plat</h5>
+<p>Grâce à "Ajouter un plat", vous pouvez ajouter, supprimer et ajuster les informations sur le plat dans le menu correspondant.</p>
+<p>&nbsp;</p>
+<h5>Colonne de gauche</h5>
+<p>La colonne de gauche est la boîte de filtre de type de plat, et les plats sous ce type de plat seront affichés après avoir cliqué sur</p>
+<p>&nbsp;</p>
+<h5>Aucune liste de plats ajoutée</h5>
+<p>Ici vous pouvez voir les plats qui ne sont pas dans ce menu, vous pouvez ajouter les plats au menu en cochant</p>
+<p>&nbsp;</p>
+<h5>Ajout de la liste des plats</h5>
+<p>Ici vous pouvez voir les plats de ce menu, ici vous pouvez effectuer les opérations et réglages suivants pour chaque plat&nbsp;:</p>
+<p>&nbsp;</p>
+<p>Remise de participation : Vous pouvez choisir si le plat participe à la remise complète de la commande (pourcentage de remise)</p>
+<p>&nbsp;</p>
+<p>Nombre de portions&nbsp;: vous pouvez définir le nombre limité de portions pour ce plat (lorsque le prix est de 0)</p>
+<p>&nbsp;</p>
+<p>Prix&nbsp;: vous pouvez définir le prix du plat correspondant dans ce menu&nbsp;; grâce à l'icône de flèche grise, vous pouvez rapidement restaurer le prix d'origine du plat en arrière-plan par lots, et grâce à l'icône de flèche bleue, vous pouvez rapidement définir le prix du plat à 0 par lots</p>
+<p>&nbsp;</p>
+<p>Prix ​​​​hors limite&nbsp;: vous pouvez définir le prix des plats une fois que le nombre de portions dépasse la limite</p>
+<p>&nbsp;</p>
+<p>Supprimer : Sélectionnez le plat et cliquez sur supprimer pour supprimer le plat sélectionné de ce menu (retour à la liste "plat non ajouté")</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Vous pouvez effectuer des opérations par lots sur plusieurs plats à la fois en cochant plusieurs plats et en cliquant sur le bouton de lot correspondant ci-dessus</p>
+<p>&nbsp;</p>
+<h4>Ajouter un package Champ Description</h4>
+<p>C'est comme "ajouter des plats", mais ce que vous obtenez, ce ne sont pas les plats des coulisses mais le menu fixe</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Allergènes</h3>
+<p>Ici vous pouvez voir, ajouter, modifier, supprimer des allergènes</p>
+<p>Par "+", vous pouvez définir rapidement les allergènes correspondants pour les plats</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Gestion des matières premières</h3>
+<p>Ici vous pouvez voir, ajouter, modifier, supprimer des matières premières</p>
+<p>Méthode d'ajout: ajoutez d'abord la matière première mère via "ajouter une matière première" (qui peut être comprise comme la classification des matières premières); puis ajoutez des matières premières enfants avec "+" dans l'opération de classification ajoutée</p>
+<p>&nbsp;</p>
+<h4>Boutons d'action et descriptions des champs</h4>
+<h5>Nom</h5>
+<p>Le nom de la matière première parente ou de la matière première enfant, vous pouvez ajouter la traduction correspondante via l'icône de traduction à côté</p>
+<p>&nbsp;</p>
+<h5>Prix</h5>
+<p>Le prix de la matière première mère ou de la sous-matière première ; la valeur par défaut est 0, lorsqu'une matière première a un prix et est ajoutée à la liste des "Matières premières additionnables" d'un plat, l'utilisateur peut voir que l'ajout de cette matière première nécessite une augmentation de prix; il sera automatiquement augmenté après sélection dans le prix du plat</p>
+<p>&nbsp;</p>
+<h5>Image</h5>
+<p>Vous pouvez ajouter des images aux matières premières (peuvent être affichées dans l'option "Ajouter des matières premières" du plat et dans le menu "Matières premières personnalisées")</p>
+<p>&nbsp;</p>
+<h5>Bouton paramètres</h5>
+<p>Modifier les champs ci-dessus correspondant aux matières premières</p>
+<p>&nbsp;</p>
+<h5>Bouton supprimer</h5>
+<p>Supprimer les matières premières correspondantes (les matières premières correspondantes ne peuvent pas)</p>
+<p>&nbsp;</p>
+<h5>Bouton dissocier</h5>
+<p>Grâce à ce bouton, la matière première peut être détachée de tous les plats en un seul clic</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Gestion du goût</h3>
+<p>Ici, vous pouvez afficher, ajouter, modifier et supprimer les préférences de goût \\Le but des préférences de goût est de permettre aux utilisateurs (serveurs ou clients) d'ajouter (sélectionner) rapidement une note commune à un certain plat</p>
+<p>&nbsp;</p>
+<h4>Boutons d'action et descriptions des champs</h4>
+<h5>Nom de la saveur</h5>
+<p>Le nom de la saveur, vous pouvez ajouter des traductions dans d'autres langues via l'icône de traduction à gauche</p>
+<p>&nbsp;</p>
+<h5>Ajouter un bouton</h5>
+<p>Grâce à ce bouton, vous pouvez définir rapidement la préférence de goût pour le plat</p>
+<p>&nbsp;</p>
+<h5>Bouton paramètres</h5>
+<p>Utilisez ce bouton pour modifier le nom ou la traduction de la préférence gustative correspondante</p>
+<p>&nbsp;</p>
+<h5>Bouton supprimer</h5>
+<p>Utilisez ce bouton pour supprimer la préférence de goût correspondante</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Commande de repas</h3>
+<p>Vous pouvez afficher, ajouter, modifier et supprimer la commande au restaurant ici</p>
+<p>Lorsque la commande de repas automatique est activée, les plats entreront en cuisine selon leur propre commande de repas (ancienne cuisine), la logique est la suivante :</p>
+<p>&nbsp;</p>
+<p>S'il n'y a qu'une seule commande de plats lors de la commande, ils iront tous directement en cuisine</p>
+<p>&nbsp;</p>
+<p>S'il y a plusieurs plats dans la commande lors de la commande, le plat avec le temps d'attente le plus bas entrera en premier dans la cuisine, puis le plat avec le deuxième temps d'attente le plus bas entrera automatiquement dans la cuisine une fois son temps d'attente écoulé, et ainsi de suite. sur</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Lorsque la commande de repas manuelle est activée, lors du réglage manuel de la commande de plats via "Précédent" et "Suivant", elle sera triée en fonction du numéro de série de la commande de repas</p>
+<p>&nbsp;</p>
+<h4>Boutons d'action et descriptions des champs</h4>
+<h5>Nom du restaurant</h5>
+<p>Nom de la commande de repas</p>
+<p>&nbsp;</p>
+<h5>Temps d'attente</h5>
+<p>Temps d'attente en commande automatique (minutes)</p>
+<p>&nbsp;</p>
+<h5>Bouton paramètres</h5>
+<p>Vous pouvez modifier le nom et le temps d'attente de la commande au restaurant correspondante</p>
+<p>&nbsp;</p>
+<h5>Supprimer</h5>
+<p>Vous pouvez supprimer la commande de restaurant correspondante</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Priorité</h3>
+<p>Consultez la liste des priorités ici (oui, vous ne pouvez rien faire d'autre, juste 1/2/3/4/5)</p>
+<p>&nbsp;</p>
+<h3>Gestion des colis</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Gestion du classement des colis</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Gestion des modèles d'étiquettes de prix</h3>
+<h2>Gestion du bureau</h2>
+<h3>Gestion de la zone de bureau</h3>
+<p>Ici, vous pouvez afficher, ajouter, modifier, supprimer une zone de tableau</p>
+<p>&nbsp;</p>
+<h4>Boutons d'action et descriptions des champs</h4>
+<h5>Nom de la zone</h5>
+<p>Le nom de la zone de table sera affiché côté bureau et l'interface d'ouverture de table côté salle d'attente peut être utilisée pour filtrer rapidement les tables</p>
+<p>&nbsp;</p>
+<h5>Bouton paramètres</h5>
+<p>Utilisez ce bouton pour modifier le nom de la zone correspondante</p>
+<p>&nbsp;</p>
+<h5>Bouton supprimer</h5>
+<p>Utilisez ce bouton pour supprimer la zone correspondante</p>
+<p>&nbsp;</p>
+<h3>Gestion du bureau</h3>
+<p>Ici, vous pouvez afficher, ajouter, modifier, supprimer des tableaux et imprimer des codes QR de tableau</p>
+<p>&nbsp;</p>
+<h3>Combinaison disponible</h3>
+<h2>Gestion de la cuisine</h2>
+<h3>Centre de production</h3>
+<h3>Prenez la bouche du plat</h3>
+<h2>Gestion des retours alimentaires</h2>
+<h3>Raison du retour</h3>
+<h3>Retourner l'enregistrement</h3>
+<h2>Refaire la gestion</h2>
+<h3>Raison de refaire</h3>
+<h3>Refaire l'enregistrement</h3>
+<h2>Gestion des plats à emporter</h2>
+<h3>Liste des commandes à emporter</h3>
+<h3>Informations sur le personnel de livraison</h3>
+<h3>liste de remboursement</h3>
+<h2>Gestion de la clientèle</h2>
+<h3>Règles des points</h3>
+<h2>Les paramètres du système</h2>
+<p>En raison du contenu volumineux de ce répertoire, créez une description de page distincte pour ce</p>
+<p><a href="/zh/pointsme_product_manual/setting_page/common_settings">Cliquez ici pour accéder à la page de détails</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Paramètres du système totémique</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Gestion des thèmes</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>&nbsp;Interface de configuration de la gestion des périphériques</h2>
