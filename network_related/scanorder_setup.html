@@ -2,7 +2,7 @@
 title: 扫码点餐
 description: 
 published: true
-date: 2023-06-01T10:01:32.882Z
+date: 2023-06-05T14:26:05.833Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-06-01T09:55:39.625Z
@@ -11,7 +11,8 @@ dateCreated: 2023-06-01T09:55:39.625Z
 <h1>扫码点餐</h1>
 <p>通常在没有开通扫码点餐的情况下，客人只能通过连接店内的PointsMe网络才能进行扫码点餐，优点是可以在无外网情况下正常点餐，缺点为步骤会多一个连接WIFI的操作。</p>
 <p>为了拥有一个更好的点餐体验，我们建议商家开通外网扫码，也就是让客人使用自己手机的移动网络也能进行点餐。</p>
-<p>通常网络运营商会给每个路由器提供一个IP地址，但这个IP地址不是固定的，每隔一段时间或者重启就会更换。 在这种情况下我们要向网络运营申请 <strong>固定外网IP地址</strong> 也就是 <strong>IP Pubblico Statico</strong>, 这样一来IP地址就不会产生变化。一般大部分网络运营上都会免费提供此服务，在网络运营商不提供此服务时我们只能通过第三方公司（例如 NO-IP）开通 <strong>DDNS服务</strong>， DDNS简单概述一下就是创建一个网址，然后由第三方公司实时将当前的IP地址连接到创建的网址，从而达到类似固定IP的效果。<br><a href="/zh/network_related/scanorder_setup/ddns_setup_noip">如何创建与管理DDNS网址</a><br>&nbsp;</p>
+<p>通常网络运营商会给每个路由器提供一个IP地址，但这个IP地址不是固定的，每隔一段时间或者重启就会更换。 在这种情况下我们要向网络运营申请 <strong>固定外网IP地址</strong> 也就是 <strong>IP Pubblico Statico</strong>, 这样一来IP地址就不会产生变化。一般大部分网络运营上都会免费提供此服务，在网络运营商不提供此服务时我们只能通过第三方公司（例如 NO-IP）开通 <strong>DDNS服务</strong>， DDNS简单概述一下就是创建一个网址，然后由第三方公司实时将当前的IP地址连接到创建的网址，从而达到类似固定IP的效果。</p>
+<p><br><a href="/zh/network_related/scanorder_setup/ddns_setup_noip"><i><strong>如何创建与管理DDNS网址</strong></i></a><br>&nbsp;</p>
 <p>以下教程为获得固定外网IP或者DDNS网址后的操作:</p>
 <p>查询外网路由器的一级网络IP地址，一般大部分的路由器的IP地址为192.168.1.1, 192.168.0.1, 192.168.1.254, 192.168.0.254.</p>
 <p>在浏览器内输入外网路由器地址进入外网路由器的管理页面内。</p>
@@ -19,8 +20,8 @@ dateCreated: 2023-06-01T09:55:39.625Z
 <p>接下来进入内网路由器的管理界面（在使用了新版omada的情况下需要使用omada进行登录，非新版omada在浏览器输入10.10.10.1即可进入）</p>
 <p>在左下方的 <strong>Settings→Transmission→NAT</strong> 点击 <strong>Create New Rule</strong></p>
 <p>按照以下参数进行设置:</p>
-<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=600&amp;tok=29ef59&amp;media=omada_pf.png" alt=""></figure>
+<figure class="image"><img src="/1_omada_pf.png"></figure>
 <p>设置完成后打开PointsMe桌面端， 进入<strong>设置→商家信息</strong> 将 <strong>局域网IP</strong> 设置为商家的外网IP地址或者DDNS网址（<a href="http://10.10.1.3:16999/doku.php?id=%E5%A6%82%E4%BD%95%E6%9F%A5%E8%AF%A2%E5%BD%93%E5%89%8D%E5%A4%96%E7%BD%91ip%E5%9C%B0%E5%9D%80">如何查询当前外网IP地址</a>）</p>
-<figure class="image"><img src="http://10.10.1.3:16999/lib/exe/fetch.php?w=600&amp;tok=0f0fff&amp;media=pm_pf.png" alt=""></figure>
+<figure class="image"><img src="/2_pm_pf.png"></figure>
 <p>完成后进入 <strong>设置→桌台管理→桌台管理</strong> 点击右上方批量下载二维码</p>
 <p>保存后打开任意二维码使用手机扫码，如果能显示开桌界面说明设置成功了。</p>
