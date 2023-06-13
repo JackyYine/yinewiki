@@ -2,7 +2,7 @@
 title: 税务打印机
 description: 此页面包含所有我司在售的打印机详情
 published: true
-date: 2023-06-13T13:07:41.974Z
+date: 2023-06-13T14:27:19.592Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-05-29T09:10:34.306Z
@@ -280,10 +280,71 @@ dateCreated: 2023-05-29T09:10:34.306Z
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h1>Axon Hydra RT</h1>
+<h2>设置IP</h2>
+<p>1. 按&nbsp;CHIAVE&nbsp;到&nbsp;PROGRAMMAZIONE</p>
+<p>2. 确认，然后使用打印机键盘下方的 “00” 与 “.” 左右键移到&nbsp;ETHERNET</p>
+<p>3. 按照以下表格设置 （使用 “Contanti” 进行设置与确认）:</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>DHCP</td>
+        <td>NO</td>
+      </tr>
+      <tr>
+        <td>PROTOCOL</td>
+        <td>TCP</td>
+      </tr>
+      <tr>
+        <td>SET IP ADDRESS</td>
+        <td>10.10.10.8 或者其他符合当前网络的IP</td>
+      </tr>
+      <tr>
+        <td>REMOTE IP</td>
+        <td>不设置</td>
+      </tr>
+      <tr>
+        <td>COM. PORT</td>
+        <td>9101</td>
+      </tr>
+      <tr>
+        <td>GATEWAY</td>
+        <td>10.10.10.1 或者当前网络的网关</td>
+      </tr>
+      <tr>
+        <td>PRIMARY DNS</td>
+        <td>8.8.8.8</td>
+      </tr>
+      <tr>
+        <td>SECONDARY DNS</td>
+        <td>8.8.4.4</td>
+      </tr>
+      <tr>
+        <td>MASK</td>
+        <td>255.255.255.0</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>按 “CL” 多次到 EMISSIONE RICEV.&nbsp;然后点击 “Contanti” 回到打单状态。</p>
+<h2>安装驱动</h2>
 <figure class="image image_resized image-style-align-right" style="width:30.01%;"><img src="https://www.axonmicrelec.com/sites/default/files/images/products/axonmicrelec-hydra-7155.jpg" alt="Stampante Fiscale con Tastiera Slide - Hydra RT">
   <figcaption>Axon Hydra RT</figcaption>
 </figure>
+<ol>
+  <li>安装 axonFPiD_Pro_v7&nbsp;</li>
+  <li>去&nbsp;C/Users/PointsMe 下面创建一个文件夹 名为&nbsp;Axon （确保文件夹权限为完全控制 教程）</li>
+  <li>打开第一步安装的 axon驱动软件 ，按照图片设置 （第一张的IP需要改为打印机当前IP）</li>
+  <li>设置开机自启&nbsp;win+R&nbsp;然后&nbsp;shell:startup，将驱动软件的快捷方式复制进打开的文件夹内。</li>
+</ol>
+<figure class="image"><img src="/axon_driver_(1).png"></figure>
+<figure class="image"><img src="/axon_driver_(2).png"></figure>
+<figure class="image"><img src="/axon_driver_(3).png"></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>更改IVA与付款信息</h2>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<h2>撤销小票Scontrino</h2>
 <p>&nbsp;</p>
