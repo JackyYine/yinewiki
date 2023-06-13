@@ -2,7 +2,7 @@
 title: 税务打印机
 description: 此页面包含所有我司在售的打印机详情
 published: true
-date: 2023-06-07T16:25:00.820Z
+date: 2023-06-13T13:07:41.974Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-05-29T09:10:34.306Z
@@ -222,7 +222,33 @@ dateCreated: 2023-05-29T09:10:34.306Z
 <p>6.&nbsp;完成后重启税务打印机</p>
 <p>&nbsp;</p>
 <h2>安装驱动</h2>
+<ol>
+  <li>将Multidriver文件夹复制到<code>C:\Users\PointsMe</code><strong> </strong>下 <i>（如果PointsMe文件夹不存在的话则需要创建起来，并修改文件夹权限为<strong>完全控制</strong>，具体操作参见</i><a href="/zh/device_related/fiscal_printer/folder_access"><i>此页面</i></a><i>）</i></li>
+  <li>打开<code>C:\Users\PointsMe\Multidriver\RCH Multidriver</code> 安装包文件夹内的MultidriverSetup.msi进行安装<i>（如果打不开驱动安装软件 需要先安装 NetFramework，“新电脑需安装”文件夹内的 <strong>NetFx20SP2_x64.exe</strong>）</i></li>
+  <li>安装目录选择<code>C:\Users\PointsMe\Multidriver</code></li>
+  <li>安装完成后打开安装目录下的<strong>Configurator.exe</strong></li>
+  <li>按照下方图片设置完后点击<strong>Salva</strong>保存</li>
+  <li>&nbsp;前往 PointsMe 软件的 <strong>设置-系统设置-打印机设置</strong></li>
+  <li>将 税务打印机设置 这边将设置改为如下表格 <i>（ IP端口 为税务打印机的IP地址）</i></li>
+</ol>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>选择税务打印机</td>
+        <td>RCH</td>
+      </tr>
+      <tr>
+        <td>IP端口</td>
+        <td>10.10.10.8:23</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
 <p>&nbsp;</p>
+<figure class="image"><img src="/immagine2.png">
+  <figcaption>Configurator.exe 设置项</figcaption>
+</figure>
 <p>&nbsp;</p>
 <h2>更改IVA</h2>
 <p>&nbsp;</p>
