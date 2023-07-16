@@ -2,7 +2,7 @@
 title: 菜单打印机
 description: 
 published: true
-date: 2023-07-10T10:10:31.149Z
+date: 2023-07-10T10:10:34.102Z
 tags: 
 editor: markdown
 dateCreated: 2023-07-10T09:37:57.800Z
