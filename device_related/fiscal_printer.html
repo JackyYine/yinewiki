@@ -2,7 +2,7 @@
 title: 税务打印机
 description: 此页面包含所有我司在售的打印机详情
 published: true
-date: 2023-08-10T10:58:36.526Z
+date: 2023-08-10T11:08:58.177Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-05-29T09:10:34.306Z
@@ -252,8 +252,7 @@ dateCreated: 2023-05-29T09:10:34.306Z
 <p>&nbsp;</p>
 <h2>更改IVA</h2>
 <p>参照<a href="/printf-manuale.pdf">此手册</a>内第17页，将Reparto 2的 Codice IVA 更改为对应10%的，假设0为22%那么1很有可能是10%。</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p><strong>情况一：</strong></p>
 <p>具体操作步骤是：</p>
 <ul>
   <li>4 Chiave,然后按Prezzo Reparto，按到屏幕上出现Percetuali IVA(部分旧的版本显示的是Aliquota),此时在数字1-7中间随意设置一个数字（记住这个数字）；</li>
@@ -261,6 +260,61 @@ dateCreated: 2023-05-29T09:10:34.306Z
   <li>此时就已经设置完了，按2次 Storno 货到PRG页面，再按 1 chiave 回到 Reg 界面</li>
 </ul>
 <p>&nbsp;</p>
+<p><strong>情况二：</strong></p>
+<ul>
+  <li>4 Chiave,然后按Prezzo Reparto，按到屏幕上出现TIPI PAGAMENTO,设置如下图：</li>
+</ul>
+<figure class="table">
+  <table style="background-color:hsl(0, 0%, 100%);">
+    <thead>
+      <tr>
+        <th>Codice Pagamento</th>
+        <th>Descrizione</th>
+        <th>Resto Abilitato</th>
+        <th>Somma in Cassa</th>
+        <th>Non Riscosso</th>
+        <th>Ticket</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <th>Contanti</th>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <th>Carta</th>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <th>Non Riscosso</th>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <th>Buoni Pasto</th>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 90%);text-align:center;">NO</td>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+        <td style="background-color:hsl(0, 0%, 100%);text-align:center;">SI</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>选择SI/NO 用 “REPARTO”为左键 , “PREZZO REPARTO”为右键,来切换</p>
+<p>REPARTI:</p>
+<p>1=22%; 2=10%; 3=4%; 4=5%; 5= 0%</p>
 <h1>Custom税务打印机（通用设置部分1）</h1>
 <p>关于custom，我们都需要使用我们自己的一款软件：PointsMePrinter 2.0，</p>
 <p><span class="text-big"><strong>商家安装的位置是：C:\Users\PointsMe（注意，一定要存放于这个文件夹下面，不然无效）</strong></span></p>
