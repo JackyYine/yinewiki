@@ -2,7 +2,7 @@
 title: 税务打印机RCH常见问题
 description: 通过小屏幕/主机桌面弹窗判断
 published: true
-date: 2023-09-11T14:20:28.249Z
+date: 2023-09-11T14:36:48.873Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-09-11T11:03:26.398Z
@@ -12,6 +12,7 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <ol>
   <li>&nbsp;怎么打chiusura（日总结）</li>
   <li>如何撤销小票</li>
+  <li>改时差</li>
   <li>电脑弹出ECR PRINTER ERRORE FORMATO DATI</li>
   <li>电脑弹出ERRORE STATO PAGAMENTO FISCALE，小票机连接的显示金额的小屏幕上显示 MANCANO</li>
   <li>税务打印机显示器内有 ERRO 093 RT INATTIVA 或 Errore 0078 或 ERR.07 FUN NON AMMESSA</li>
@@ -80,6 +81,15 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>3+Chiave</p>
 <p>200+Contanti(此条口令为打当天的Chiusura，如果是有多张未打出，比如显示NON CONNECTION,则需要按422+Contanti）</p>
 <p>此时会出2张纸，观察下小屏幕的显示，如果回到REG界面，就不用管，如果显示为Z，则需要按 1 + Chiave 回到REG界面</p>
+<h2>改时间</h2>
+<ol>
+  <li>先打一个CHIUSURA(日总结）</li>
+  <li>在屏幕处于REG界面时，按4+CHIAVE,然后按PREZZO REPARTO到屏幕上出现DATA/ORA,按Contanti</li>
+  <li>然后按照日GIORNO、月MESE、年ANNO、小时ORE、分钟MINUTI，分别填写正确的数字，每一页写完，按Contanti</li>
+  <li>分钟（MINUTI）按完Contanti后，屏幕上会重新出现DATA/ORA，想要退出到REG界面的话，按STORNO退出，直到屏幕上出现SRV/Z时，按1+CHIAVE</li>
+</ol>
+<p><i><strong>注意</strong>，如果输入完DATA/ORA后，屏幕显示了DATA AVANTI(OK/ANNULLA)，则代表，上一次Chiusura的日期大于3天，可以通过REPARTO/PREZZO REPARTO选择OK/ANNULLA，进行保存或者取消本次设定的时间。</i></p>
+<p>&nbsp;</p>
 <h2>如何撤销小票</h2>
 <p>意大利语教程直接看Link</p>
 <p><a href="https://www.youtube.com/watch?v=G5uvHCmFt0E">https://www.youtube.com/watch?v=G5uvHCmFt0E</a></p>
