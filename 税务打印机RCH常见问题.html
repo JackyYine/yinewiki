@@ -2,7 +2,7 @@
 title: 税务打印机RCH常见问题
 description: 通过小屏幕/主机桌面弹窗判断
 published: true
-date: 2023-09-11T13:57:56.075Z
+date: 2023-09-11T14:12:20.550Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-09-11T11:03:26.398Z
@@ -26,6 +26,54 @@ dateCreated: 2023-09-11T11:03:26.398Z
 </figure>
 <figure class="image"><img src="/reg界面.png">
   <figcaption>小屏幕显示REG为默认页面</figcaption>
+</figure>
+<h2>一些常见按键的含义/组合按键</h2>
+<p>CL</p>
+<figure class="table">
+  <table>
+    <tbody>
+      <tr>
+        <td>按键</td>
+        <td>含义</td>
+      </tr>
+      <tr>
+        <td>CL</td>
+        <td>取消</td>
+      </tr>
+      <tr>
+        <td>CHIAVE</td>
+        <td>指令按键的确认或者理解为打开这个指令的钥匙，要和contanti区分开</td>
+      </tr>
+      <tr>
+        <td>CONTANTI</td>
+        <td>确认键，可以理解为保存，翻下一页</td>
+      </tr>
+      <tr>
+        <td>REPARTO</td>
+        <td>左键或者上一页</td>
+      </tr>
+      <tr>
+        <td>PREZZO REPARTO</td>
+        <td>右键或者下一页</td>
+      </tr>
+      <tr>
+        <td>STORNO</td>
+        <td>退回，仅是一些操作界面的退回，不是上下页翻页，翻页选择REPARTO/PREZZO REPARTO</td>
+      </tr>
+      <tr>
+        <td>1+CHIAVE</td>
+        <td>屏幕出现Z/SRV时，按这个会回到REG界面</td>
+      </tr>
+      <tr>
+        <td>点 &nbsp; &nbsp; “.”</td>
+        <td>多见于输入ip地址等页面，快速输入三次0可出现</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
 </figure>
 <h2>怎么打Chiusura（日总结）</h2>
 <p>保持小屏幕显示为REG界面时（看上述图）</p>
@@ -86,9 +134,12 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>non connection解决方案：</p>
 <ol>
   <li>插入配套的小键盘按<mark class="marker-yellow">5+Chiave</mark>，</li>
-  <li>显示金额的小屏幕上出现password，输入555 contanti，然后一直按prezzo reparto&nbsp;按到connettività，</li>
-  <li>然后一下contanti，然后按2下prezzo reparto，出现Ethernet，按一下CONTANTI，</li>
-  <li>输入ip地址：10.10.10.8&nbsp;，然后按contanti，确认是否是255.255.255.0，如果是，就一直按CONTANTI&nbsp;，直到出现DNS，设置为10.10.10.1，然后一直CONTANTI&nbsp;，直到小屏幕显示INVIO IN CORSO（正在发送中）。</li>
+  <li>显示金额的小屏幕上出现<mark class="marker-yellow">PASSWORD</mark>，输入<mark class="marker-yellow">555 &nbsp;contanti</mark>，然后一直按<mark class="marker-yellow">PREZZO&nbsp;REPARTO 按到 Connettività</mark>，</li>
+  <li>然后一下<mark class="marker-yellow">Contanti</mark>，然后<mark class="marker-yellow">按2下PREZZO&nbsp;REPARTO</mark>，出现<mark class="marker-yellow">Ethernet</mark>，按一下<mark class="marker-yellow">CONTANTI</mark>，</li>
+  <li>输入ip地址：10.10.10.8&nbsp;(注意，这里如果不是这个ip地址，说明之前这个商家也不是这个ip地址，没有关系，原本是什么就是什么，不用修改）</li>
+  <li>然后按contanti，确认是否是255.255.255.0，如果是，就一直按CONTANTI&nbsp;，直到出现DNS，设置为10.10.10.1，然后一直CONTANTI&nbsp;【此处几乎不用修改，都是Contanti一直按下去】</li>
+  <li>直到小屏幕显示INVIO IN CORSO（正在发送中）</li>
+  <li>等待一会，会打出来一张可能巨长的纸，屏幕上显示<mark class="marker-yellow">INVIATO CORRETTAMENTE</mark>，就说明已经设置成功（可能纸上面大部分会显示INVIATO CORRETTAMENTO,但是个别一两行还是NON CONNECTION,不用管，忽略它）</li>
 </ol>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
