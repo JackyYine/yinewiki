@@ -2,7 +2,7 @@
 title: 税务打印机RCH常见问题
 description: 通过小屏幕/主机桌面弹窗判断
 published: true
-date: 2023-09-11T13:49:43.861Z
+date: 2023-09-11T13:57:56.075Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-09-11T11:03:26.398Z
@@ -67,6 +67,29 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>先把弹窗关闭，再将配套的小键盘插入小票机，按一下<mark class="marker-yellow">Contanti</mark>，小票就可以出来了，然后再请商家打一张0.01€的小票，试验小票机是否已恢复正常</p>
 <h2>ERRO 093 RT INATTIVA 或 Errore 0078 或 ERR.07 FUN NON AMMESSA</h2>
 <p>&nbsp;</p>
+<p>原因：前一天或很多天没有打出日总结（或打了日总结，但发送失败）</p>
+<p>解决方案：将日总结打出来，参考第一条</p>
+<h2>ECR GLOBE ERRORE FORMATO DATI</h2>
+<figure class="image"><img src="/globe_errore.png">
+  <figcaption>GLOBE ERRORE FORMATO DATI</figcaption>
+</figure>
+<p>原因：打印机出现错误（打印错误或 打印格式错误）</p>
+<p>解决方案：到我的电脑-用户-里面进行更改</p>
+<h2>APERTURA LAN IP CONNECTION REFUSED 或 NON CONNECTION（纸上打出来的）</h2>
+<p>&nbsp;</p>
+<p>原因：小票机网线连接出现问题，需要重置一下连接</p>
+<p>解决方案：</p>
+<ol>
+  <li>确认网线已插入完好，重启小票机</li>
+  <li>打一下日总结，如果日总结失败并出现non connection</li>
+</ol>
+<p>non connection解决方案：</p>
+<ol>
+  <li>插入配套的小键盘按<mark class="marker-yellow">5+Chiave</mark>，</li>
+  <li>显示金额的小屏幕上出现password，输入555 contanti，然后一直按prezzo reparto&nbsp;按到connettività，</li>
+  <li>然后一下contanti，然后按2下prezzo reparto，出现Ethernet，按一下CONTANTI，</li>
+  <li>输入ip地址：10.10.10.8&nbsp;，然后按contanti，确认是否是255.255.255.0，如果是，就一直按CONTANTI&nbsp;，直到出现DNS，设置为10.10.10.1，然后一直CONTANTI&nbsp;，直到小屏幕显示INVIO IN CORSO（正在发送中）。</li>
+</ol>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
