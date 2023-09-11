@@ -2,7 +2,7 @@
 title: 税务打印机RCH常见问题
 description: 通过小屏幕/主机桌面弹窗判断
 published: true
-date: 2023-09-11T15:56:17.049Z
+date: 2023-09-11T15:56:34.252Z
 tags: 
 editor: markdown
 dateCreated: 2023-09-11T11:03:26.398Z
