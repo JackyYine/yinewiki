@@ -2,12 +2,13 @@
 title: 税务打印机RCH常见问题
 description: 通过小屏幕/主机桌面弹窗判断
 published: true
-date: 2023-09-11T13:11:36.910Z
+date: 2023-09-11T13:49:43.861Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-09-11T11:03:26.398Z
 -->
 
+<p>&nbsp;</p>
 <ol>
   <li>&nbsp;怎么打chiusura（日总结）</li>
   <li>如何撤销小票</li>
@@ -31,5 +32,42 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>3+Chiave</p>
 <p>200+Contanti(此条口令为打当天的Chiusura，如果是有多张未打出，比如显示NON CONNECTION,则需要按422+Contanti）</p>
 <p>此时会出2张纸，观察下小屏幕的显示，如果回到REG界面，就不用管，如果显示为Z，则需要按 1 + Chiave 回到REG界面</p>
+<h2>如何撤销小票</h2>
+<p>意大利语教程直接看Link</p>
+<p><a href="https://www.youtube.com/watch?v=G5uvHCmFt0E">https://www.youtube.com/watch?v=G5uvHCmFt0E</a></p>
+<p>中文看下面操作：</p>
+<ol>
+  <li>按一下键盘上面的<mark class="marker-yellow">SHIFT</mark>按键，此时屏幕上也会出现SHIFT字样，</li>
+  <li>然后按下chiave旁边的红色按键 <mark class="marker-yellow">ANNULLO (ANN-SCO.)</mark>,此时屏幕上会出现ANNULLAMENTO? SI/NO ,通过REPARTO(左）/PREZZO REPARTO（右）按键，<mark class="marker-yellow">调整括号到SI</mark>，<mark class="marker-yellow">按下Contanti</mark></li>
+  <li>此时屏幕会出现MATRICOLA RT:(一串字母+数字)，这里是确认是当前税务打印机信息，不用管，<mark class="marker-yellow">直接按CONTANTI</mark></li>
+  <li>屏幕上会出现<mark class="marker-yellow">NUM.AZZERAMENTO:(数字）</mark>，此时需要拿出我们需要取消的税票，查看税票下方的8位数字，将<mark class="marker-yellow">前</mark>面的数字填写在这里，<mark class="marker-yellow">按下Contanti</mark></li>
+  <li>屏幕上会出现<mark class="marker-yellow">NUM.SCONTRINO:(数字）</mark>，此时需要拿出我们需要取消的税票，查看税票下方的8位数字，将<mark class="marker-yellow">后</mark>面的数字填写在这里，<mark class="marker-yellow">按下Contanti </mark>（见下图）</li>
+  <li>然后分别确认一下<mark class="marker-yellow">日、月、年</mark>的填写，按<mark class="marker-yellow">Contanti</mark>进行确认</li>
+  <li>屏幕上会显示步骤4-步骤6的全部数据，也就是要取消的税票的数据，通过REPARTO/PREZZO REPARTO左右调整为SI，后点Contanti</li>
+  <li>屏幕上会显示ANNULLAMENTO EURO +小票金额，并弹出一张写有ANNULLO SCOTRINO的小票，则代表成功</li>
+</ol>
+<figure class="image"><img src="/annullo_scontrino_rch.png">
+  <figcaption>ANNULLO SCONTRINO NUMERO</figcaption>
+</figure>
+<h2>电脑弹出ECR PRINTER ERRORE FORMATO DATI</h2>
+<figure class="image"><img src="/ecr_printer_errore_formato_dati.png">
+  <figcaption>ECR PRINTER ERRORE FORMATO DATI</figcaption>
+</figure>
+<p>错误原因：说明菜品中出现了特殊字符，将菜品中特殊字符修改后，此弹窗关闭，再打一次税票</p>
+<p>特殊字符包含：中文字体，中文的标点符号（句号。冒号：逗号，分隔符号‘’等），</p>
+<p>以及意大利的重音符号：ò à ù è é ç ° § ì</p>
+<p>注意：制作菜单时，检查一下这些字符</p>
+<h2>ERRORE STATO PAGAMENTO FISCALE/MANCANO</h2>
+<figure class="image"><img src="/mancano.png">
+  <figcaption>ERRORE STATO PAGAMENTO FISCALE/MANCANO</figcaption>
+</figure>
+<p>电脑弹出ERRORE STATO PAGAMENTO FISCALE，小票机连接的显示金额的小屏幕上显示<strong>MANCANO</strong></p>
+<p>错误原因：说明还有小票未打出来</p>
+<p>解决方案：</p>
+<p>先把弹窗关闭，再将配套的小键盘插入小票机，按一下<mark class="marker-yellow">Contanti</mark>，小票就可以出来了，然后再请商家打一张0.01€的小票，试验小票机是否已恢复正常</p>
+<h2>ERRO 093 RT INATTIVA 或 Errore 0078 或 ERR.07 FUN NON AMMESSA</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
