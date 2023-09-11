@@ -2,7 +2,7 @@
 title: 税务打印机RCH常见问题
 description: 通过小屏幕/主机桌面弹窗判断
 published: true
-date: 2023-09-11T15:14:21.475Z
+date: 2023-09-11T15:30:59.714Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-09-11T11:03:26.398Z
@@ -10,9 +10,12 @@ dateCreated: 2023-09-11T11:03:26.398Z
 
 <h1>RCH税务打印机常见问题</h1>
 <ol>
+  <li>常见操作键含义</li>
   <li>怎么打chiusura（日总结）</li>
   <li>如何撤销小票</li>
-  <li>改时差</li>
+  <li>改时间</li>
+  <li>屏幕上显示：<strong>VERIFICA PERIODICA SCADUTA</strong>&nbsp;</li>
+  <li>小屏幕上显示MEM. ESAURITO/DGFE ESAURITO等字样</li>
   <li>电脑弹出ECR PRINTER ERRORE FORMATO DATI</li>
   <li>电脑弹出ERRORE STATO PAGAMENTO FISCALE，小票机连接的显示金额的小屏幕上显示 MANCANO</li>
   <li>税务打印机显示器内有 ERRO 093 RT INATTIVA 或 Errore 0078 或 ERR.07 FUN NON AMMESSA</li>
@@ -29,7 +32,7 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <figure class="image"><img src="/reg界面.png">
   <figcaption>小屏幕显示REG为默认页面</figcaption>
 </figure>
-<h2>一些常见按键的含义/组合按键</h2>
+<h2>问题1：一些常见按键的含义/组合按键</h2>
 <figure class="table">
   <table>
     <tbody>
@@ -76,12 +79,12 @@ dateCreated: 2023-09-11T11:03:26.398Z
     </tbody>
   </table>
 </figure>
-<h2>怎么打Chiusura（日总结）</h2>
+<h2>问题2：怎么打Chiusura（日总结）</h2>
 <p>保持小屏幕显示为REG界面时（看上述图）</p>
 <p>3+Chiave</p>
 <p>200+Contanti(此条口令为打当天的Chiusura，如果是有多张未打出，比如显示NON CONNECTION,则需要按422+Contanti）</p>
 <p>此时会出2张纸，观察下小屏幕的显示，如果回到REG界面，就不用管，如果显示为Z，则需要按 1 + Chiave 回到REG界面</p>
-<h2>改时间</h2>
+<h2>问题3：改时间</h2>
 <ol>
   <li>先打一个CHIUSURA(日总结）</li>
   <li>在屏幕处于REG界面时，按4+CHIAVE,然后按PREZZO REPARTO到屏幕上出现DATA/ORA,按Contanti</li>
@@ -89,8 +92,23 @@ dateCreated: 2023-09-11T11:03:26.398Z
   <li>分钟（MINUTI）按完Contanti后，屏幕上会重新出现DATA/ORA，想要退出到REG界面的话，按STORNO退出，直到屏幕上出现SRV/Z时，按1+CHIAVE</li>
 </ol>
 <p><i><strong>注意</strong>，如果输入完DATA/ORA后，屏幕显示了DATA AVANTI(OK/ANNULLA)，则代表，上一次Chiusura的日期大于3天，可以通过REPARTO/PREZZO REPARTO选择OK/ANNULLA，进行保存或者取消本次设定的时间。</i></p>
+<h2>问题4：<strong>VERIFICA PERIODICA SCADUTA</strong></h2>
+<figure class="image"><img src="/年检.png">
+  <figcaption><strong>VERIFICA PERIODICA SCADUTA/年检</strong></figcaption>
+</figure>
+<p>需要进行年检，可以联系老外直接操作，我们的合作方的联系方式为：</p>
+<p>Gallorini: 0284638 42/43</p>
+<p>ADPE: 3468141169</p>
+<p>或者让他们自行联系附近RCH运营点</p>
+<h2>问题5：MEM. ESAURITO/DGFE ESAURITO</h2>
+<p>出现原因：小票的内存空间不足，需要更换内存卡</p>
+<p>联系上述运营商购买，建议不要直接从Amazon购买，有可能会出现购买的不能使用。</p>
+<p>更换方式如图，注意内存卡的正反面：</p>
+<figure class="image image_resized" style="width:59.94%;"><img src="/dgfe.png">
+  <figcaption>DGFE</figcaption>
+</figure>
 <p>&nbsp;</p>
-<h2>如何撤销小票</h2>
+<h2>问题6：如何撤销小票</h2>
 <p>意大利语教程直接看Link</p>
 <p><a href="https://www.youtube.com/watch?v=G5uvHCmFt0E">https://www.youtube.com/watch?v=G5uvHCmFt0E</a></p>
 <p>中文看下面操作：</p>
@@ -107,7 +125,7 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <figure class="image"><img src="/annullo_scontrino_rch.png">
   <figcaption>ANNULLO SCONTRINO NUMERO</figcaption>
 </figure>
-<h2>电脑弹出ECR PRINTER ERRORE FORMATO DATI</h2>
+<h2>问题7：电脑弹出ECR PRINTER ERRORE FORMATO DATI</h2>
 <figure class="image"><img src="/ecr_printer_errore_formato_dati.png">
   <figcaption>ECR PRINTER ERRORE FORMATO DATI</figcaption>
 </figure>
@@ -115,7 +133,7 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>特殊字符包含：中文字体，中文的标点符号（句号。冒号：逗号，分隔符号‘’等），</p>
 <p>以及意大利的重音符号：ò à ù è é ç ° § ì</p>
 <p>注意：制作菜单时，检查一下这些字符</p>
-<h2>ERRORE STATO PAGAMENTO FISCALE/MANCANO</h2>
+<h2>问题8：ERRORE STATO PAGAMENTO FISCALE/MANCANO</h2>
 <figure class="image"><img src="/mancano.png">
   <figcaption>ERRORE STATO PAGAMENTO FISCALE/MANCANO</figcaption>
 </figure>
@@ -123,17 +141,17 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>错误原因：说明还有小票未打出来</p>
 <p>解决方案：</p>
 <p>先把弹窗关闭，再将配套的小键盘插入小票机，按一下<mark class="marker-yellow">Contanti</mark>，小票就可以出来了，然后再请商家打一张0.01€的小票，试验小票机是否已恢复正常</p>
-<h2>ERRO 093 RT INATTIVA 或 Errore 0078 或 ERR.07 FUN NON AMMESSA</h2>
+<h2>问题9：ERRO 093 RT INATTIVA 或 Errore 0078 或 ERR.07 FUN NON AMMESSA</h2>
 <p>&nbsp;</p>
 <p>原因：前一天或很多天没有打出日总结（或打了日总结，但发送失败）</p>
 <p>解决方案：将日总结打出来，参考第一条</p>
-<h2>ECR GLOBE ERRORE FORMATO DATI</h2>
+<h2>问题10：ECR GLOBE ERRORE FORMATO DATI</h2>
 <figure class="image"><img src="/globe_errore.png">
   <figcaption>GLOBE ERRORE FORMATO DATI</figcaption>
 </figure>
 <p>原因：打印机出现错误（打印错误或 打印格式错误）</p>
 <p>解决方案：到我的电脑-用户-里面进行更改</p>
-<h2>APERTURA LAN IP CONNECTION REFUSED 或 NON CONNECTION（纸上打出来的）</h2>
+<h2>问题11：APERTURA LAN IP CONNECTION REFUSED 或 NON CONNECTION（纸上打出来的）</h2>
 <p>&nbsp;</p>
 <p>原因：小票机网线连接出现问题，需要重置一下连接</p>
 <p>解决方案：</p>
@@ -164,11 +182,11 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>然后按contanti,按四五下之后，变成了STRADA,连着按3遍STORNO,小屏幕上面显示为：SRV,然后按下1+chiave,回到REG界面，</p>
 <p>就按一下3+chiave ,422+contanti,然后等待屏幕变成Inviato correttamente就说明发送成功了</p>
 <p>等一切都弄完，也打出来纸了，就看一下小屏幕上面，显示的是Z还是REG，如果是reg就不用任何操作，如果是Z，就需要按一下1+chiave,会到REG界面。</p>
-<h2>如果所有连接都正常，小票打不出来，弹框也没有</h2>
+<h2>问题12：如果所有连接都正常，小票打不出来，弹框也没有</h2>
 <p>解决方案：</p>
 <p>打开任务管理器Gestione attività –&nbsp;详细信息Dettagli&nbsp;，然后找到MULTIDRIVER_APP，结束其任务 Termina attività</p>
 <figure class="image"><img src="/结束multidriver_app.png"></figure>
-<h2>小票不切纸</h2>
+<h2>问题13：小票不切纸</h2>
 <p>1.&nbsp;只有新商家会出现的问题 每张小票都不切纸：</p>
 <p>&nbsp; &nbsp; 5 CHIAVE – 555 CONTANTI –&nbsp;按PREZZO REPARTO按到OPZIONI FIDELITY&nbsp;然后按 CONTANTI</p>
 <p>&nbsp; &nbsp;&nbsp;选择NO – CONTANTI – STORNO – 1 CHIAVE</p>
@@ -176,7 +194,7 @@ dateCreated: 2023-09-11T11:03:26.398Z
 <p>注：都不行的话，可以联系我们长期合作的RCH相关负责人</p>
 <p>Gallorini: 0284638 42/43</p>
 <p>ADPE: 3468141169</p>
-<h2>小票不显示iva值</h2>
+<h2>问题14：小票不显示iva值</h2>
 <figure class="image"><img src="/scorporo_iva.png">
   <figcaption>SCORPORO IVA</figcaption>
 </figure>
@@ -184,7 +202,7 @@ dateCreated: 2023-09-11T11:03:26.398Z
   <li>先打CHIUSURA，按4+CHIAVE,然后一直按PREZZO REPARTO，按到屏幕上显示-PROGRAMMAZIONE-SCORPORO IVA，按一下Contanti</li>
   <li>按过出现SCORPORO IVA? &nbsp;通过调整REPARTO/PREZZO REPARTO，选择SI后按下Contanti即可，退出还是按STORNO到屏幕上出现Z/SRV后按1+CHIAVE</li>
 </ol>
-<h2>常见所有的ERRORE列表</h2>
+<h2>问题15：常见所有的ERRORE列表</h2>
 <figure class="table">
   <table>
     <tbody>
